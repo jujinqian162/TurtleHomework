@@ -4,5 +4,5 @@
 ## 运行
 ```bash
 chmod +x run.sh
-./run.sh
+./run.sh turtle
 ```
