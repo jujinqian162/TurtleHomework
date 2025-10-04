@@ -7,7 +7,7 @@ from .PidController import PIDController
 import numpy as np
 from .PointsTransformer import transform_points 
 import math
-class MoveToPointsNode(Node):
+class TurtleSim(Node):
     def __init__(self):
         super().__init__('turtle_heart')
         self.get_logger().info("Hello from turtle heart")
@@ -79,7 +79,7 @@ class MoveToPointsNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = MoveToPointsNode()
+    node = TurtleSim()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:

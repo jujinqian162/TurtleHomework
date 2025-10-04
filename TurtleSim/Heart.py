@@ -2,16 +2,11 @@ import math
 import numpy as np
 from typing import Generator
 class HeartController:
-        
     def debug_points(self):
         yield np.array([1, 1])
         yield np.array([-1, 1])
         yield np.array([-1, -1])
         yield np.array([1, -1])
-
-    
-
-
     
     def generate_points(self) -> Generator[np.ndarray, None, None] : 
         center = np.array([0, 0])
